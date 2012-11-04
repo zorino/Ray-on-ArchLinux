@@ -1,3 +1,19 @@
 Guidelines: https://wiki.archlinux.org/index.php/Creating_Packages
 
 Submission: https://wiki.archlinux.org/index.php/AUR_User_Guidelines#Submitting_packages
+
+To make the package:
+
+    makepkg -f PKGBUILD
+
+To install them:
+
+    pacman -U *.xz
+
+To test the PKGBUILD:
+
+    namcap PKGBUILD
+
+To test packages:
+
+    namcap *.xz

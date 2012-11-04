@@ -24,7 +24,8 @@ build() {
     -n "assemble genomes in parallel using the message-passing interface" \
     ./Ray
 
-  sed 's/S??bastien/Sebastien/g' \
+  # remove symbols that are not in U.S. American English 
+  sed 's/Erdős.*Rényi/Erdos-Renyi/g;s/é/e/g;s/É/E/g;s/ç/c/g;s/ő/o/g' \
     Ray.1.man > Ray.1
 
   rm Ray.1.man
