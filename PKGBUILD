@@ -6,8 +6,7 @@ pkgrel=1
 pkgdesc="Parallel genome assemblies for parallel DNA sequencing"
 arch=("i686" "x86_64")
 url="http://denovoassembler.sf.net"
-license=('GPLv3')
-depends=("openmpi" "zlib" "bzip2")
+license=('GPL3' "LGPL3")
 makedepends=("openmpi" "zlib" "bzip2" "help2man")
 optdepends=()
 source=(http://downloads.sourceforge.net/project/denovoassembler/Ray-v$pkgver.tar.bz2)
@@ -33,7 +32,7 @@ build() {
 
 package_ray() {
   pkgdesc="Parallel genome assemblies for parallel DNA sequencing"
-  depends=("openmpi" "zlib" "bzip2")
+  depends=("openmpi")
 
   cd "$srcdir/Ray-v$pkgver"
 
