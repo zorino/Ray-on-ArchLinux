@@ -61,8 +61,10 @@ package_ray-doc() {
   mkdir -p $pkgdir/usr/share/doc/ray/RayPlatform
   
   chmod -R 644 Documentation
+  chmod +x Documentation
   cp -r Documentation/ $pkgdir/usr/share/doc/ray
   chmod -R 644 RayPlatform/Documentation
+  chmod +x RayPlatform/Documentation
   cp -r RayPlatform/Documentation/ $pkgdir/usr/share/doc/ray/RayPlatform
 }
 
