@@ -1,3 +1,7 @@
+Packaging of Ray for ArchLinux
+Copyright(R) 2012 Sébastien Boisvert
+Copyright(R) 2012 Maxime Déraspe
+
 Guidelines: https://wiki.archlinux.org/index.php/Creating_Packages
 
 Submission: https://wiki.archlinux.org/index.php/AUR_User_Guidelines#Submitting_packages
