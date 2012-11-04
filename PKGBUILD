@@ -3,8 +3,8 @@
 pkgname=("ray" "ray-doc" "ray-extra")
 pkgver=2.1.0
 pkgrel=1
-pkgdesc="Parallel genome assemblies for parallel DNA sequencing"
 arch=("i686" "x86_64")
+pkgdesc="Parallel genome assemblies for parallel DNA sequencing"
 url="http://denovoassembler.sf.net"
 license=('GPL3' "LGPL3")
 makedepends=("openmpi" "zlib" "bzip2" "help2man")
@@ -33,6 +33,7 @@ build() {
 package_ray() {
   pkgdesc="Parallel genome assemblies for parallel DNA sequencing"
   depends=("openmpi")
+  arch=("i686" "x86_64")
 
   cd "$srcdir/Ray-v$pkgver"
 
@@ -53,7 +54,7 @@ package_ray() {
 
 package_ray-doc() {
   pkgdesc="Ray documentation"
-  depends=("ray")
+  arch=("any")
 
   cd "$srcdir/Ray-v$pkgver"
 
@@ -67,7 +68,8 @@ package_ray-doc() {
 
 package_ray-extra() {
   pkgdesc="Ray scripts and XSL sheets for post-processing"
-  depends=("ray" "python" "r")
+  depends=("python" "r")
+  arch=("any")
 
   cd "$srcdir/Ray-v$pkgver"
 
