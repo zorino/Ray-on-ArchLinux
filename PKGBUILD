@@ -1,4 +1,5 @@
 # Maintainer: Maxime Deraspe <maxime@deraspe.net>
+# Contributor: Sébastien Boisvert <seb@boisvert.info>
 
 pkgname=("ray" "ray-doc" "ray-extra")
 pkgver=2.1.0
