@@ -21,3 +21,7 @@ To test the PKGBUILD:
 To test packages:
 
     namcap *.xz
+
+split packages
+
+	https://aur.archlinux.org/packages/sp/splittest/PKGBUILD
