@@ -9,6 +9,7 @@ run(){
 
 run "namcap PKGBUILD"
 run "makepkg -f PKGBUILD"
+run "ls *.xz"
 run "namcap *.xz"
 
 
