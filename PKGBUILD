@@ -56,7 +56,6 @@ package_ray() {
 }
 
 package_ray-doc() {
-  pkgdesc="Ray documentation"
   arch=("any")
 
   cd "$srcdir/Ray-v$pkgver"
@@ -72,7 +71,6 @@ package_ray-doc() {
 }
 
 package_ray-extra() {
-  pkgdesc="Ray scripts and XSL sheets for post-processing"
   depends=("python" "r")
   arch=("any")
 
