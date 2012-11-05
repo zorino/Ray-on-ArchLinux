@@ -1,7 +1,9 @@
 # Maintainer: Maxime Deraspe <maxime@deraspe.net>
 # Contributor: Sébastien Boisvert <seb@boisvert.info>
 
-pkgname=("ray" "ray-doc" "ray-extra")
+pkgbase=("ray")
+pkgname=("ray")
+true && pkgname=("ray" "ray-doc" "ray-extra")
 pkgver=2.1.0
 pkgrel=1
 arch=("i686" "x86_64")
@@ -11,8 +13,8 @@ license=('GPL3' "LGPL3")
 makedepends=("openmpi" "zlib" "bzip2" "help2man")
 optdepends=()
 source=(http://downloads.sourceforge.net/project/denovoassembler/Ray-v$pkgver.tar.bz2)
-sha1sums=(4c09f2731445852857af53b65aa47e444792eeb0)
-md5sums=(81c6a029039600fdfaad1e819abed11d)
+sha1sums=("4c09f2731445852857af53b65aa47e444792eeb0")
+md5sums=("81c6a029039600fdfaad1e819abed11d")
 
 build() {
   cd "$srcdir/Ray-v$pkgver"
@@ -80,5 +82,4 @@ package_ray-extra() {
   chmod -R 755 scripts
   cp -r scripts/ $pkgdir/usr/share/ray
 }
-
 
