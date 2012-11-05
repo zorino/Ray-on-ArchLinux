@@ -35,7 +35,6 @@ build() {
 package_ray() {
   pkgdesc="Parallel genome assemblies for parallel DNA sequencing"
   depends=("openmpi")
-  arch=("i686" "x86_64")
 
   cd "$srcdir/Ray-v$pkgver"
 
