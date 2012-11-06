@@ -14,4 +14,4 @@ run "makepkg -f PKGBUILD"
 run "ls *.xz"
 run "namcap *.xz"
 
-) &> QualityControl-$(date +%Y-%m-%d-%H-%M-%S-%s).txt
+) &> QualityControl/QualityControl-$(date +%Y-%m-%d-%H-%M-%S-%s).txt
